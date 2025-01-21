@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Input and Button Styles */
+input, select, button {
+  width: calc(100% - 30px); /* Consistent width for inputs and buttons */
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Primary Button Styles */
+button#addTask {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button#clearTasks {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+button#exportTasks {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button#exportTasks:hover {
+  background-color: #218838;
+}
+
+/* Task List Section */
+#taskList {
+  flex: 1; /* Takes up available space */
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+/* Task Item Styles */
+.task-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #f7f7f7;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Remove Scrollbars */
+html, body {
+  overflow: hidden;
+}

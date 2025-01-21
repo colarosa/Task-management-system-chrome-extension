@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Task Manager Extension</h1>
+    <div class="task-section">
+      <input id="taskInput" type="text" placeholder="Enter a task" />
+      <select id="priorityInput">
+        <option value="High">High</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button id="addTask">+ Add Task</button>
+    </div>
+    <div class="button-section">
+      <button id="clearTasks">Clear All</button>
+      <button id="exportTasks">Export</button>
+    </div>
+    <div id="taskList"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
