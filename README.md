@@ -50,7 +50,3 @@ The extension uses the following permission:
 ### **Contributing**
 Contributions are welcome! If you have suggestions for improving the extension, feel free to submit an issue or a pull request.
 
----
-
-### **License**
-This project is licensed under the [MIT License](LICENSE).
